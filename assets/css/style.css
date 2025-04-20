@@ -1,0 +1,476 @@
+/* Apply global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;  /* Disable horizontal scrolling */
+}
+/* Navbar Styling */
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1vw 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.nav-links i{
+    display: none;
+    font-weight: 500;
+    font-size: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+.nav-toggle {
+    display: none; /* Hide the menu toggle by default */
+    cursor: pointer;
+    font-size: 2vw;
+}
+/* Navbar Items */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+nav a {
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: #1B1B1B;
+    padding: 1vw 1vw;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 1.5vw;
+    color: #000000;
+}
+/* Email Button */
+.email-button {
+    background-color: #1B1B1B;
+    color: white;
+    padding: 1vw 1vw;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.email-button:hover {
+    padding: 1vw 1.5vw;
+}
+.intro {
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    transform: translateX(-50%);
+    color: rgb(65, 63, 63);
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5vw;  /* Adjusted font-size */
+    font-weight: normal;
+    width: 80%;
+}
+/* Section Home */
+.container1 {
+font-family: "Media Sans Semicondensed", Impact, sans-serif;
+  justify-content: center;
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Full screen height */
+  width: 100%; /* Full screen width */
+  text-align: center; /* Center text */
+  background-color: #ffffff;
+}
+
+
+/* Profile Image */
+.profile-img {
+    width: 55vw;
+    max-width: 700px; /* Optional: Prevents image from growing too large */
+    height: auto;
+    margin-top: -2%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+h2 {
+    position: absolute; /* Make the element absolute */
+    font-size: 12rem; /* Set font size */
+    letter-spacing: 0.9vw; /* Add space between letters (viewport-based) */
+    color: rgb(255, 255, 255); /* Set initial text color */
+    margin-top: -20%; /* Move the h2 up */
+    padding: 0; /* Remove default padding */
+    text-transform: none; /* Set text transformation to none */
+    -webkit-background-clip: text; /* For cross-browser support */
+    background-clip: text; /* Clip background to the text */
+    text-align: center; /* Center text horizontally */
+    font-family: "Media Sans Semicondensed", Impact, sans-serif; /* Set font family */
+    background: transparent;
+    -webkit-text-fill-color: rgba(3, 3, 3, 0.288); /* Fill color */
+    opacity: 1;
+    z-index: - 1;
+}
+.home:hover h2 {
+    mix-blend-mode:multiply;
+    -webkit-text-stroke: 2px rgb(0, 0, 0); /* White border around the text */
+  text-shadow: 0 0 2px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+    color: transparent; /* Make the text transparent */
+    -webkit-text-fill-color: transparent; /* Remove the fill color, keeping only the border */
+    border: 2px bold white;
+    z-index: 1;
+  }
+
+.ri-menu-fold-3-fill{
+    display: none;
+}
+/* h3 styling */
+h3 {
+    position: absolute; /* Make the element absolute */
+    font-size: 12rem; /* Set font size */
+    font-weight: 900;
+    letter-spacing: 0.7vw; /* Add space between letters (viewport-based) */
+    margin-top:0%; /* Move the h3 up */
+    padding: 0; /* Remove default padding */
+    text-transform: none; /* Set text transformation to none */
+    mix-blend-mode: multiply;
+    -webkit-background-clip: text; /* For cross-browser support */
+    background-clip: text;
+    text-align: center; /* Center text horizontally */
+    font-family: "Media Sans Semicondensed", Impact, sans-serif; /* Set font family */
+    background: transparent;
+    -webkit-text-fill-color: rgba(3, 3, 3, 0.288); /* Fill color */
+    opacity: 1;
+}
+
+.home:hover h3{
+    z-index: 3;
+}
+h3:hover {
+    -webkit-text-stroke: .1vw rgb(0, 0, 0); /* Border color on hover */
+    color: transparent; /* Make the text transparent */
+    -webkit-text-fill-color: transparent; /* Remove the fill color, keeping only the border */
+}
+
+
+.videographer-button{
+    margin-top:-15%;
+    margin-left: 40%;
+    position: absolute;
+    background-color: #1B1B1B;
+    color: white;
+    padding: 10px 6px 10px;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.editor-button{
+    margin-top: -15%;
+    margin-left: 55%;
+    position: absolute;
+    background-color: #1B1B1B;
+    color: rgb(255, 255, 255);
+    padding: 10px 6px 10px;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.videographer-button:hover{
+    background-color: white;
+    color: #1B1B1B;
+    border: 2px solid black;
+    padding: 10px 14px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
+}
+.editor-button:hover{
+    background-color: white;
+    color: #1B1B1B;
+    border: 2px solid black;
+    padding: 10px 14px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
+}
+.editor-button:hover{
+    padding: 10px 14px;
+}
+
+.seemycreation-button{
+    margin-top:-15%;
+    margin-left: 40%;
+    position: absolute;
+    background-color: #1B1B1B;
+    color: white;
+    padding: 10px 6px 10px;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.discovermore-button{
+    margin-top: -15%;
+    margin-left: 55%;
+    position: absolute;
+    background-color: #1B1B1B;
+    color: rgb(255, 255, 255);
+    padding: 10px 6px 10px;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.seemycreation-button, .discovermore-button{
+    display: none;
+}
+
+#check {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+}
+/* Style the hamburger icon */
+#checkbtn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 1768px) {
+
+    .intro {
+        font-size: 2vw; /* Adjust font-size for mobile screens */
+    }
+
+    .nav-links li {
+        display: flex; /* Hide menu items */
+    }
+
+    .nav-links .email-button {
+        display: none; /* Hide email button */
+    }
+
+    /* Profile Image for smaller screens */
+    .profile-img {
+        width: 55vw;
+         max-width: 650px;
+        margin-top: 10%;
+    }
+
+    /* Adjust text size for headings on smaller screens */
+    h2, h3 {
+        font-size: 10rem; /* Adjust font size */
+        letter-spacing: 1vw; /* Adjust letter spacing */
+    }
+}
+
+/* For extra small screens (e.g., phones in portrait mode) */
+@media only screen and (max-width: 1444px) {
+.intro{
+    font-size: 1.6vw;
+}
+
+.profile-img{
+    width: 50vw;
+    max-width: 600px
+}
+.h2{
+    margin-top:-25%
+}
+}
+
+@media only screen and (max-width: 1080px) {
+    .editor-button, .videographer-button{
+        font-size: 1.8vw;
+    }
+    .editor-button{
+        margin-left: 50%;
+        margin-top:-20%;
+    }
+    .videographer-button{
+        margin-left: 30%;
+        margin-top:-20%;
+    }
+    .intro{
+        font-size: 1.2vw;
+    }
+    
+    .profile-img{
+        width: 50vw;
+        width:650px;
+    }
+    .h2{
+        margin-top:-23%
+    }
+    .h2, .h3{
+        font-size: 10vw;
+    }
+    }
+
+    
+@media only screen and (max-width: 935px) {
+    .intro{
+        font-size: 2.4vw;
+    }
+    
+    .profile-img{
+        width: 60vw; /* Increase width for small screens */
+        max-width: 100%; /* Ensure it doesn't exceed container */
+        height: auto;
+    }
+    .h2,.h3{
+        font-size: 6rem;
+    }
+    .h2{
+        margin-top:-25%
+    }
+    }
+    @media only screen and (max-width: 750px) {
+        .intro{
+            font-size: 3vw;
+        }
+        
+        .profile-img{
+            width: 80vw; /* Increase width for small screens */
+            max-width: 100%; /* Ensure it doesn't exceed container */
+            height: auto;
+        }
+        .h2,.h3{
+            font-size: 5rem;
+        }
+        .h2{
+            margin-top:-25%
+        }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .intro{
+                font-size: 2.4vw;
+            }
+            .nav-links li{
+                display:none;
+            }
+            .nav-links i{
+                display: flex;
+                font-size: 1.4rem;
+            }
+            .editor-button, .videographer-button{
+            display: none;
+            }
+            .profile-img{
+                width: 78vw; /* Increase width for small screens */
+                max-width: 100%; /* Ensure it doesn't exceed container */
+                height: auto;
+                margin-top: 40vh;
+            }
+            .h2,.h3{
+                font-size: 4.3rem;
+                font-weight: 900;
+            }
+            .h2{
+                margin-top:-110%;
+                font-weight: 900;
+                background: transparent; /* Transparent background */
+                -webkit-text-fill-color: transparent; /* Make text fill transparent */
+                -webkit-text-stroke: 1px black; /* Black border around text */
+                opacity: 0.8;
+            }
+            .h3{
+                margin-top: -85%;
+            }
+
+            .seemycreation-button, .discovermore-button{
+                display: block;
+                flex-direction: column;
+                padding: 12px 20px 12px;
+                border-radius: 5px;
+                font-size: 2vw;
+                gap:2vw;
+                margin-top: -108%;
+            }
+            .seemycreation-button{
+                margin-left: 30%;
+            }
+            .discovermore-button{
+                margin-left: 60%;
+            }
+
+            }
+
+            @media only screen and (max-width: 540px) {
+                .intro{
+                    margin-top: 8%;
+                    font-size: 2.4vw;
+                }
+                .nav-links li{
+                    display: none;
+                }
+                .nav-links i{
+                    display: flex;
+                    font-size: 1.4rem;
+                }
+                .profile-img{
+                    width: 78vw; /* Increase width for small screens */
+                    max-width: 600px;
+                    height: auto;
+                    margin-top: 40vh;
+                }
+
+                .h2,.h3{
+                    font-size: 3rem;
+                    font-weight: 900;
+                }
+                .h2{
+                    margin-left:  10px;
+                    margin-top:-110%;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    background: transparent; /* Transparent background */
+                    -webkit-text-fill-color: transparent; /* Make text fill transparent */
+                    -webkit-text-stroke: 1px black; /* Black border around text */
+                    opacity: 0.8;
+                }
+                .h3{
+                    margin-left: 10px;
+                    margin-top: -85%;
+                }
+
+                .seemycreation-button, .discovermore-button{
+                    display: block;
+                    flex-direction: column;
+                    padding: 12px 20px 12px;
+                    border-radius: 5px;
+                    font-size: 2vw;
+                    gap:2vw;
+                    margin-top: -115%;
+                }
+                .seemycreation-button{
+                    margin-left: 30%;
+                }
+                .discovermore-button{
+                    margin-left: 60%;
+                }
+
+                }
